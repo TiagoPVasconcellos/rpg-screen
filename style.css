@@ -11,7 +11,15 @@
   width: 100vw;
   height: 100vh;
   box-sizing: border-box;
-  background-color: darkolivegreen;
+  background-image: url(00TALEN.jpg);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  object-fit: cover;
+}
+#container img {
+  width: 100%;
+  z-index: -1;
 }
 /* div principal / 2 */
 .informations {
@@ -24,7 +32,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: rgb(60, 153, 96);
+  background-color: transparent;
 }
 /* left side  */
 .name-infos,
@@ -64,8 +72,8 @@
   width: 50%;
 }
 #specie-type {
-    width: 10vw;
-    background-color: rgb(206, 193, 137);
+  width: 10vw;
+  background-color: rgb(206, 193, 137);
 }
 .final-infos {
   margin: 1vw;

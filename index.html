@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RPG</title>
+</head>
+
+<body>
+    <div id="container">
+        <section class="informations">
+            <div class="name-infos">
+                <div class="label-input">
+                    <label for="name-caracter" class="choose-info">Name:</label>
+                    <input type="text" id="name-character" placeholder="Name" maxlength="20">
+                </div>
+                <div>
+                    <button class="name-btn disable" onclick="getRandomName()">Random Name</button>
+                </div>
+            </div>
+            <div class="specie-infos">
+                <div class="label-input">
+                    <label for="specie-type" class="choose-info">Specie:</label>
+                    <select name="specie" id="specie-type">
+                        <option value="elf">Elf</option>
+                        <option value="human">Human</option>
+                        <option value="dwarf">Dwarf</option>
+                        <option value="gnome">Gnome</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="final-infos">
+                <p>Random numbers of power</p>
+                <div class="powers">
+                    <div class="line-powers">
+                        <button class="disable" onclick="getRandomAtk()">Atack</button>
+                        <button class="disable" onclick="getRandomDefense()">Defense</button>
+                        <button class="disable" onclick="getRandomMagic()">Magic</button>
+                    </div>
+                    <div class="line-powers">
+                        <button class="disable" onclick="getRandomLife()">Life</button>
+                        <button class="disable" onclick="getRandomWeapon()">Weapon</button>
+                        <button class="disable" onclick="getRandomForce()">Force</button>
+                    </div>
+                </div>
+                <button class="complete" onclick="complete()">Character Complete</button>
+            </div>
+        </section>
+        <section class="informations">
+            <div class="chosen-info">
+                <p id="name"></p>
+                <p id="specie"></p>
+            </div>
+            <table>
+                <tr>
+                    <td>Atack:</td>
+                    <td id="atk"></td>
+                    <td>Defense:</td>
+                    <td id="defense"></td>
+                </tr>
+                <tr>
+                    <td>Magic:</td>
+                    <td id="magic"></td>
+                    <td>Life:</td>
+                    <td id="life"></td>
+                </tr>
+                <tr>
+                    <td>Weapon:</td>
+                    <td id="weapon"></td>
+                    <td>Force:</td>
+                    <td id="force"></td>
+                </tr>
+            </table>
+            <article class="ability">
+                <blockquote class="special-ability"></blockquote>
+            </article>
+
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
